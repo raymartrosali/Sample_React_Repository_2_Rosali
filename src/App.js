@@ -4,6 +4,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import ContactUs from "./pages/contactus";
 import AboutUs from "./pages/aboutus";
+import BasicFormHandling from "./pages/BasicFormHandling";
+// Importing Class State
+import ClassState from "./pages/ClassState";
+
+import FunctionalState from "./pages/FunctionalState";
 function App() {
   return (
     <>
@@ -13,6 +18,13 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/about" element={<AboutUs/>}></Route>
         <Route path="/contact" element={<ContactUs/>}></Route>
+        
+        {/* Using it as a component */}
+        <Route path="/classState" element={<ClassState/>}></Route>
+
+        {/* Using it as a component */}
+        <Route path="/functionalUseState" element={<FunctionalState/>}></Route>
+        <Route path="/basicFormHandling" element={<BasicFormHandling/>}></Route>
       </Routes>
     </BrowserRouter>
     
